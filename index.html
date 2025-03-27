@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope Electrics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="language-switcher">
+        <button onclick="setLanguage('ro')" class="lang-btn active" id="ro-btn">RO</button>
+        <button onclick="setLanguage('en')" class="lang-btn" id="en-btn">EN</button>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <svg class="icon" viewBox="0 0 24 24" width="40" height="40">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 6a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6zM5 14a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-4zM8.5 10v4M12 10v4M15.5 10v4M3 3v18M21 3v18"></path>
+            </svg>
+            <h1 id="title">Hope Electrics</h1>
+        </div>
+
+        <div class="subtitle-container">
+            <svg class="icon animate-wrench" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+            </svg>
+            <h2 id="subtitle">Website Under Construction</h2>
+        </div>
+
+        <p id="description" class="description"></p>
+
+        <div class="button-container">
+            <a href="https://portal.hopeeletrics.ro" target="_blank" rel="noopener noreferrer" class="portal-btn">
+                <span id="portal-text">Customer Portal</span>
+                <svg class="icon" viewBox="0 0 24 24" width="20" height="20">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"></path>
+                </svg>
+            </a>
+
+            <p class="coming-soon" id="coming-soon">Coming Soon 🚀</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-left"></div>
+        <div class="footer-center">
+            <p class="copyright" id="copyright">© 2024 Hope Electrics. All rights reserved.</p>
+            <p class="bible-quote" id="bible-quote">"Let your light shine before others." - Matthew 5:16</p>
+        </div>
+        <div class="footer-right">
+            <svg class="icon infinity-icon" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.178 8c5.096 0 5.096 8 0 8-5.095 0-7.133-8-12.739-8-4.585 0-4.585 8 0 8 5.606 0 7.644-8 12.74-8z"></path>
+            </svg>
+            <div class="grace-loop">
+                <p>Part of</p>
+                <p>Grace Loop Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

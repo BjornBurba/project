@@ -1,0 +1,208 @@
+:root {
+    --primary-red: #dc2626;
+    --dark-red: #7f1d1d;
+    --gray-900: #111827;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--dark-red), var(--gray-900));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.language-switcher {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.lang-btn {
+    padding: 0.25rem 0.75rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: var(--dark-red);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.lang-btn.active {
+    background-color: var(--primary-red);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.header .icon {
+    color: var(--primary-red);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.subtitle-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.subtitle-container .icon {
+    color: var(--primary-red);
+}
+
+.animate-wrench {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--primary-red);
+}
+
+.description {
+    font-size: 1.125rem;
+    max-width: 42rem;
+    margin-bottom: 3rem;
+    color: #d1d5db;
+    line-height: 1.6;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.portal-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-red);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.portal-btn:hover {
+    background-color: #b91c1c;
+}
+
+.coming-soon {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-red);
+}
+
+.footer {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-center {
+    flex: 2;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 0.875rem;
+    color: #d1d5db;
+    margin-bottom: 0.5rem;
+}
+
+.bible-quote {
+    font-size: 0.875rem;
+    color: var(--primary-red);
+    font-style: italic;
+}
+
+.footer-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.75rem;
+}
+
+.infinity-icon {
+    color: var(--primary-red);
+}
+
+.grace-loop {
+    text-align: left;
+    font-size: 0.875rem;
+}
+
+.grace-loop p:first-child {
+    color: #d1d5db;
+}
+
+.grace-loop p:last-child {
+    color: var(--primary-red);
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3.75rem;
+    }
+
+    h2 {
+        font-size: 1.875rem;
+    }
+
+    .description {
+        font-size: 1.25rem;
+    }
+}
